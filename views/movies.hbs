@@ -1,0 +1,15 @@
+  <hr>
+  <h4>ironhack cinema</h4>
+   <p id="movies-p">click on the movie to check the showtimes</p>
+   
+  <div class="movies-flex-contain">
+   {{#each movies}} 
+    <div>
+        <img src={{image}} alt="all movies">
+   <h2>{{title}}</h2>
+   <a href='/movie/{{id}}'>See More</a> 
+    </div>
+   {{/each}}
+   </div>
+
+

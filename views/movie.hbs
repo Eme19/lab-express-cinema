@@ -1,0 +1,18 @@
+<hr>
+<div  class="movie-flex-container">
+    <img src={{movie.image}} alt="movie">
+    <div id="movie-styling">
+    <a href='/movies/{{id}}'>go back</a> 
+    <h5>{{movie.title}}</h5>
+    <h3>Director: {{movie.director}}</h3>
+    <h6>stars</h6>
+   <ul>
+    {{#each movie.stars}}
+    <li>{{this}}</li>
+    {{/each}}
+    </ul>
+    <p>{{movie.description}}</p>
+    <figcaption>{{movie.showtimes}}</figcaption>
+    </div>
+
+</div>
